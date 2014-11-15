@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Backbone.js Tests</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+    <link rel="stylesheet" href="js/lib/mocha/mocha.css" media="screen">
+
+    <!-- Js Test Libraries -->
+    <script src="js/lib/mocha/mocha.js"></script>
+    <script src="js/lib/chai/chai.js"></script>
+    <script src="js/lib/chai/chai-backbone.js"></script>
+    <script src="js/lib/chai/chai-jquery.js"></script>
+    <script src="js/lib/chai/sinon-chai.js"></script>
+    <script src="js/lib/sinon/sinon.js"></script>
+
+    <!-- Js Core Libraries -->
+    <script src="../app/js/lib/jquery-2.1.0.min.js"></script>
+    <script src="../app/js/lib/underscore.min.js"></script>
+    <script src="../app/js/lib/backbone.min.js"></script>
+    <script src="../app/js/lib/backbone.localStorage-min.js"></script>
+
+    <!-- Js Application Libraries -->
+    <script src="../app/js/app/namespace.js"></script>
+    <script src="../app/js/app/models/ramal.js"></script>
+
+    <!-- Setup Mocha and Chai -->
+    <script>
+      // Setup
+      var expect = chai.expect;
+      mocha.setup("bdd");
+
+      // Run tests on window load event
+      window.onload = function () {
+        mocha.run();
+      };
+    </script>
+
+    <!-- Include our specs -->
+    <script src="js/spec/namespace.spec.js"></script>
+    <script src="js/spec/models/ramal.spec.js"></script>
+    <script src="js/spec/collections/ramaisLista.spec.js"></script>
+  </head>
+  <body>
+    <div id="mocha"></div>
+  </body>
+</html>
