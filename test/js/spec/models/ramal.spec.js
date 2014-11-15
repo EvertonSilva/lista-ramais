@@ -27,6 +27,7 @@
 
      expect(model.get("numero")).to.equal("0085");
      expect(model.get("setor")).to.equal("Portaria");
+     expect(model.get("colaboradores")).to.include("Porteiro Zé");
    });
 
  });
