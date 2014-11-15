@@ -4,7 +4,7 @@
  * Suite de testes para a Collection de ramais
  */
 
- describe("App.Collections.RamaisLista", function () {
+ describe("App.Collections.Ramais", function () {
    describe("creation", function () {
      it("has default values");
      it("should be empty on fetch");
