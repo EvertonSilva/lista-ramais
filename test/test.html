@@ -11,7 +11,7 @@
     <script src="../app/js/lib/underscore.min.js"></script>
     <script src="../app/js/lib/backbone.min.js"></script>
     <script src="../app/js/lib/backbone.localStorage-min.js"></script>
-    
+
     <!-- Js Test Libraries -->
     <script src="js/lib/mocha/mocha.js"></script>
     <script src="js/lib/chai/chai.js"></script>
@@ -31,6 +31,8 @@
     </script>
     <script src="../app/js/app/models/ramal.js"></script>
     <script src="../app/js/app/collections/ramais.js"></script>
+    <script src="../app/js/app/templates/templates.js"></script>
+    <script src="../app/js/app/views/ramal-view.js"></script>
 
     <!-- Setup Mocha and Chai -->
     <script>
@@ -48,8 +50,13 @@
     <script src="js/spec/namespace.spec.js"></script>
     <script src="js/spec/models/ramal.spec.js"></script>
     <script src="js/spec/collections/ramais.spec.js"></script>
+    <script src="js/spec/views/ramal-view.spec.js"></script>
   </head>
   <body>
+    <!--  Mocha test report -->
     <div id="mocha"></div>
+
+    <!--  Test fixtures -->
+    <div id="fixtures" style="display:none; visibility:hidden;"></div>
   </body>
 </html>
