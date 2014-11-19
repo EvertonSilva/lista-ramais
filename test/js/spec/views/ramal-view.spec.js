@@ -6,7 +6,7 @@
 
  describe("App.Views.RamalView", function () {
    before(function () {
-     this.$fixtures = $('<div id="note-view-fixtures"></div>');
+     this.$fixtures = $('<div id="ramal-view-fixtures"></div>');
    });
 
    beforeEach(function () {
@@ -47,9 +47,12 @@
      expect($colab.prop("tagName").toLowerCase()).to.be.equal("p");
    });
 
-   it("should binds the expect html to correnct DOM location", function (done) {
+   it("should binds the expected html to the correct DOM location", function (done) {
      this.view.model.once("change", function () {
-       expect($("#note-view-fixtures").html())
+       var $viewEl = $("#ramal-view-fixtures"), $body = $('body');
+
+       expect($body.html()).to.contain($viewEl.html());
+       expect($viewEl.html())
         .to.contain('<h2 class="ramal">9009</h2>').and
         .to.contain('<p class="setor">Classe 205</p>').and
         .to.contain('<p class="colab">Gregório</p>');
