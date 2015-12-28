@@ -2,6 +2,16 @@
  * View RamalApp
  *
  * Suite de testes para RamalView
+ * ------------------------------
+ *
+ * Esta classe é responsável por
+ * lidar com o model Ramal por
+ * tanto ela deve:
+ *
+ * 1. Receber um model como parâmetro ie.:"{model: ramal}"
+ * 2. Renderizar um model adequadamente
+ * 3. Responder aos eventos disparados pelo model (change/destroy)
+ *
  */
 
  describe("App.Views.RamalView", function () {
